@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+  padding:0;
+}
+
+body{
+    font-family: "Open Sans";
+}
+
+.heading{
+    width:100vw;
+    height: 25rem;
+    background: url(../assets/Green\ Professional\ Colorful\ Intern\ Photos\ LinkedIn\ Article\ Cover\ Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2rem solid #C1A194;
+
+    &__container{
+        height: 100%;
+        padding-left:5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title{
+        font-size: 3.25rem;
+        font-weight: 700;
+    }
+
+    &__subtitle{
+        font-size:1.875rem;
+        font-weight: 400;
+    }
+}
+
+.main-wrapper{
+    display: flex;
+    padding: 2.5rem 5rem 2.5rem 5rem;
+
+    &__daily-joke{
+        width:65%;
+    }
+
+    .daily-joke{
+        width:80%;
+        margin: auto;
+        background-color: #F6F2EB;
+        padding:1rem;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 1rem;
+
+        &__text{
+            font-size: 1.5rem;
+            padding:1.5rem;
+            text-align: center;
+        }
+
+        &__action-group{
+            width:80%;
+            margin: auto;
+            padding-top: 2.5rem;
+
+            .joke-button{
+                background-color: #8B7362;
+                color:white;
+                padding:0.5rem;
+                border-radius: 1rem;
+                border: none;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                width:48%;
+
+                &--large{
+                    width:100%;
+                }
+
+                &__icon{
+                    width:1.2rem;
+                }
+            }
+        }
+
+    }
+
+    .button-thumbs{
+        display: flex;
+        justify-content: space-between
+    }
+    
+    &__joke-list{
+        width:35%; 
+        border-left: 1rem solid #605D58;
+        padding-left: 2rem;
+        font-size: 1.25rem;
+    }
+}
+
+.footer{
+    background-color:#605D58;
+    padding: 2.5rem 5rem 2.5rem 5rem;
+    color:white;
+    font-size: 1.5rem;
+}
