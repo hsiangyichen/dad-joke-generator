@@ -12,7 +12,7 @@ A fun web application that generates random dad jokes using the [icanhazdadjoke 
 
 ## Demo
 
-![Dad Joke Generator Demo](./assets/demo.png)
+<!-- ![Dad Joke Generator Demo](./assets/demo.png) -->
 
 ## Technologies Used
 
