@@ -10,48 +10,60 @@
     <script src="./scripts/main.js" defer></script>
   </head>
   <body>
-    <header class="heading">
-      <section class="heading__container">
-        <h1 class="heading__title">Dad Joke Generator</h1>
-        <h3 class="heading__subtitle">Get your daily dose of dad Jokes!</h3>
-      </section>
-    </header>
-    <main class="main">
-      <section class="main__wrapper">
-        <h2 class="daily-joke__subtitle">Daily Joke</h2>
-        <div class="daily-joke">
-          <p class="daily-joke__text">
-            Why don't skeletons fight each other? Because they don't have the
-            guts!
-          </p>
-        </div>
-        <div class="daily-joke__action">
-          <button class="button button--large">Get a New Joke</button>
-          <div class="button__group">
-            <button class="button funny">
-              <img
-                class="button__icon"
-                src="./assets/like.svg"
-                alt="like icon"
-              />
-              Funny
-            </button>
-            <button class="button not-funny">
-              <img
-                class="button__icon"
-                src="./assets/dislike.svg"
-                alt="dislike icon"
-              />
-              Not Funny
-            </button>
+    <section class="outer-container">
+      <header class="heading">
+        <section class="heading__container">
+          <h1 class="heading__title">Dad Joke Generator</h1>
+          <h3 class="heading__subtitle">Get your daily dose of dad Jokes!</h3>
+          <img
+            class="heading__joke"
+            src="./assets/hero-joke.png"
+            alt="Hero Joke"
+          />
+        </section>
+        <img
+          class="heading__hero"
+          src="./assets/hero-paper.png"
+          alt="Hero Paper"
+        />
+      </header>
+      <main class="main">
+        <section class="main__wrapper">
+          <h2 class="daily-joke__subtitle">Daily Joke</h2>
+          <div class="daily-joke">
+            <p class="daily-joke__text">
+              Why don't skeletons fight each other? Because they don't have the
+              guts!
+            </p>
           </div>
-        </div>
-      </section>
-      <section class="main__favorites">
-        <h2 class="favorites__subtitle">Favorite Jokes</h2>
-        <ol class="favorites__list"></ol>
-      </section>
-    </main>
+          <div class="daily-joke__action">
+            <button class="button button--large">Get a New Joke</button>
+            <div class="button__group">
+              <button class="button funny">
+                <img
+                  class="button__icon"
+                  src="./assets/like.svg"
+                  alt="like icon"
+                />
+                Funny
+              </button>
+              <button class="button not-funny">
+                <img
+                  class="button__icon"
+                  src="./assets/dislike.svg"
+                  alt="dislike icon"
+                />
+                Not Funny
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="main__favorites">
+          <h2 class="favorites__subtitle">Favorite Jokes</h2>
+          <ol class="favorites__list"></ol>
+        </section>
+      </main>
+    </section>
     <footer class="footer">
       <section class="footer__container">
         <p class="footer__content">

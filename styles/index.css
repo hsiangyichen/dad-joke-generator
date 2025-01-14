@@ -13,9 +13,8 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+ol {
+  padding-left: 1.8em;
 }
 
 body {
@@ -26,28 +25,54 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: none;
+}
+
+.outer-container {
+  background-image: url("../assets/note-background.svg"), url("../assets/brown-background.png");
+  background-size: 65% auto, 35% auto;
+  background-position: left, right;
+  background-repeat: repeat-y, repeat-y;
+}
+
 .heading {
-  width: 100vw;
-  height: 25rem;
-  background: url(../assets/Green\ Professional\ Colorful\ Intern\ Photos\ LinkedIn\ Article\ Cover\ Image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom: 2rem solid #c1a194;
+  width: 100%;
+  height: 20rem;
 }
 .heading__container {
   height: 100%;
+  width: 100%;
   padding-left: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .heading__title {
   font-size: 3rem;
   font-weight: 700;
+  z-index: 20;
 }
 .heading__subtitle {
   font-size: 1.25rem;
   font-weight: 400;
+  z-index: 20;
+}
+.heading__joke {
+  height: 90%;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  z-index: 10;
+}
+.heading__hero {
+  min-width: 100%;
+  height: 25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 
 .main {
@@ -55,51 +80,61 @@ button {
 }
 .main__wrapper {
   width: 65%;
-  padding: 0rem 5rem;
 }
 .main__favorites {
   width: 35%;
-  border-left: 1rem solid #605d58;
-  padding-right: 1.75rem;
+  height: 36rem;
   font-size: 1.25rem;
-  height: 60vh;
   overflow: scroll;
 }
 
 /* ------------------------------- Daily Joke ------------------------------- */
 .daily-joke {
-  width: 80%;
-  margin: auto;
-  background-color: #f6f2eb;
-  padding: 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 1rem;
+  margin: 0 10rem 0 5rem;
 }
 .daily-joke__subtitle {
-  padding-top: 2.5rem;
-  text-align: center;
+  margin: 0 10rem 0 5rem;
+  padding-top: 3.5rem;
   line-height: 0.8;
   font-size: 1.875rem;
   padding-bottom: 2.5rem;
 }
 .daily-joke__text {
+  background-color: #f6f2eb;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-size: 1.25rem;
-  padding: 1rem;
+  padding: 2.5rem 2rem;
   text-align: center;
 }
 .daily-joke__action {
-  width: 80%;
-  margin: auto;
+  margin: 0 10rem 0 5rem;
   padding-top: 2.5rem;
 }
 
-/* --------------------------------- buttons -------------------------------- */
+/* -------------------------------- Favorite -------------------------------- */
+.favorites__subtitle {
+  padding: 3.5rem 0 1.5rem 3rem;
+  line-height: 0.8;
+}
+.favorites__list {
+  font-size: 1rem;
+  padding-left: 4.125rem;
+  padding-right: 3rem;
+}
+.favorites__item {
+  margin: 1rem 0;
+  background-color: #f6f2eb;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* --------------------------------- Buttons -------------------------------- */
 .button {
   height: 3rem;
   background-color: #8b7362;
   color: white;
   padding: 0.5rem;
-  border-radius: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   border: none;
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -118,22 +153,6 @@ button {
 .button__group {
   display: flex;
   justify-content: space-between;
-}
-
-/* -------------------------------- Favorite -------------------------------- */
-.favorites__subtitle {
-  padding: 2.5rem 0 1.5rem 1.375rem;
-  line-height: 0.8;
-}
-.favorites__list {
-  font-size: 1rem;
-}
-.favorites__item {
-  margin: 1rem 0;
-  background-color: #f6f2eb;
-  padding: 1rem;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  border-radius: 1rem;
 }
 
 /* --------------------------------- Footer --------------------------------- */
